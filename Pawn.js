@@ -2,13 +2,15 @@ export default class Pawn {
     constructor(pos, icon) {
         this.x = pos.x;
         this.y = pos.y;
+        this.square = 0;
         this.icon = icon;
         this.size = 50;
     }
 
-    move(pos) {
+    move(pos, square) {
         this.x = pos.x;
         this.y = pos.y;
+        this.square = square;
     }
 
     show() {

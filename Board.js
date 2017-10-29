@@ -4,6 +4,7 @@ export default class Board {
     constructor(json) {
         this.squares = json.squares;
         this.pawns = [];
+        this.totalSquares = 30;
     }
 
     createPawn() {
@@ -11,8 +12,10 @@ export default class Board {
         this.pawns.push(new Pawn(this.getSquarePos(0), icon));
     }
 
-    movePawn(pawnNum, square) {
-        this.pawns[pawnNum].move(this.getSquarePos(square));
+    movePawn(pawnNum, points) {
+        const newSquare = this.pawns[pawnNum].square + points;
+        console.log(newSquare);
+        this.pawns[pawnNum].move(this.getSquarePos(newSquare), newSquare);
     }
 
     getSquarePos(num) {

@@ -1,0 +1,35 @@
+.dice {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 30px;
+    border: 2px solid #000;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0 20px;
+}
+
+#assignment {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    padding: 50px;
+}
+
+.answers {
+    margin: 0;
+    padding: 0;
+}
+
+.title, .answer {
+    display: block;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: monospace;
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+{
+    "assignments": [
+        {
+            "type": "question",
+            "title": "Wat voor litteken heeft Harry Potter?",
+            "points": 5,
+            "answers": [
+                "Bliksemschicht",
+                "Harpoen",
+                "Boom",
+                "Waterval"
+            ],
+            "correct": 0
+        },
+        {
+            "type": "question",
+            "title": "Wat is geen bijnaam van Siem?",
+            "points": 3,
+            "answers": [
+                "Sumi",
+                "Sumoski",
+                "Bulldozer",
+                "Poepie"
+            ],
+            "correct": 2
+        }
+    ]
+}
