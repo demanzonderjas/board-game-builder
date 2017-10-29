@@ -12,13 +12,18 @@ export default class Board {
         this.pawns.push(new Pawn(this.getSquarePos(0), icon));
     }
 
-    movePawn(pawnNum, points) {
-        const newSquare = this.pawns[pawnNum].square + points;
-        console.log(newSquare);
-        this.pawns[pawnNum].move(this.getSquarePos(newSquare), newSquare);
-    }
-
     getSquarePos(num) {
         return this.squares[num].coords;
     }
+
+    movePawn(pawnNum) {
+        const newSquare = this.pawns[pawnNum].square + 1;
+        this.pawns[pawnNum].move(this.getSquarePos(newSquare));
+    }
+
+    setPoints(pawnNum, points) {
+        this.pawns[pawnNum].pointsLeft = points;
+        this.pawns[pawnNum].isMoving = true;
+    }
+
 }

@@ -20,7 +20,12 @@ window.setup = () => {
 
 window.draw = () => {
     background(bg);
-    board.pawns.forEach(pawn => pawn.show());
+    board.pawns.forEach((pawn, idx) => {
+        if(pawn.isMoving && frameCount % 30 === 0) {
+            board.movePawn(idx);
+        }
+        pawn.show();
+    });
     if(dice.rolling) {
         dice.roll();
     }

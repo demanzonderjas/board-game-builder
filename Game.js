@@ -10,7 +10,7 @@ export default class Game {
     checkOutcome([isCorrect, points]) {
         console.log(isCorrect, points);
         if(isCorrect) {
-            this.board.movePawn(0, points);
+            this.board.setPoints(0, points);
         }
         this.activeAssignment.hide();
     }

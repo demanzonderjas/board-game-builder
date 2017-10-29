@@ -3,14 +3,21 @@ export default class Pawn {
         this.x = pos.x;
         this.y = pos.y;
         this.square = 0;
+        this.pointsLeft = 0;
         this.icon = icon;
+        this.isMoving = false;
         this.size = 50;
     }
 
-    move(pos, square) {
-        this.x = pos.x;
-        this.y = pos.y;
-        this.square = square;
+    move(pos) {
+        if(this.isMoving && this.pointsLeft) {
+            this.square = this.square + 1;
+            this.pointsLeft = this.pointsLeft - 1;
+            this.x = pos.x;
+            this.y = pos.y;
+        } else {
+            this.isMoving = false;
+        }
     }
 
     show() {
