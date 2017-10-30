@@ -1,9 +1,36 @@
 {
+    "categories": [
+        {
+            "image": "bejaarden.jpg",
+            "name": "Bejaarden"
+        },
+        {
+            "image": "harry-potter.jpg",
+            "name": "Harry Potter"
+        },
+        {
+            "image": "knutselen.jpg",
+            "name": "Knutselen"
+        },
+        {
+            "image": "legpuzzels.jpg",
+            "name": "Legpuzzels"
+        },
+        {
+            "image": "siem.jpg",
+            "name": "Siem"
+        },
+        {
+            "image": "sims.png",
+            "name": "Sims"
+        }
+    ],
     "assignments": [
         {
             "type": "question",
             "title": "Wat voor litteken heeft Harry Potter?",
             "points": 5,
+            "category": "Harry Potter",
             "answers": [
                 "Bliksemschicht",
                 "Harpoen",
@@ -16,6 +43,7 @@
             "type": "question",
             "title": "Wat is geen bijnaam van Siem?",
             "points": 3,
+            "category": "Siem",
             "answers": [
                 "Sumi",
                 "Sumoski",

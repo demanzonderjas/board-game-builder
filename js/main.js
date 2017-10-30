@@ -1,20 +1,18 @@
-let bg, board, boardData, dice, game, gameData;
+let bg, board, boardData, game, gameData;
 
 import Board from './Board.js';
-import Dice from './Dice.js';
 import Game from './Game.js';
 
 window.preload = () => {
-    bg = loadImage("board.jpg");
-    boardData = loadJSON("board.json");
-    gameData = loadJSON("game.json");
+    bg = loadImage("./../img/board.jpg");
+    boardData = loadJSON("./../data/board.json");
+    gameData = loadJSON("./../data/game.json");
 }
 
 window.setup = () => {
     createCanvas(800, 800);
     board = new Board(boardData);
     game = new Game(gameData, board);
-    dice = new Dice();
     board.createPawn();
 }
 
@@ -26,14 +24,14 @@ window.draw = () => {
         }
         pawn.show();
     });
-    if(dice.rolling) {
-        dice.roll();
+    if(game.dice.rolling && frameCount % 5 === 0) {
+        game.dice.roll();
     }
 }
 
 window.addEventListener("click", () => {
-    dice.start();
+    game.dice.start();
     setTimeout(() => {
-        dice.stop(() => game.showAssignment.call(game));
+        game.dice.stop((outcome) => game.showAssignment.call(game, outcome));
     }, 1500);
 });

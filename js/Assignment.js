@@ -6,6 +6,7 @@ export default class Assignment {
         this.title = data.title;
         this.points = data.points;
         this.answers = data.answers;
+        this.category = data.category;
         this.correct = data.correct;
         this.element = document.getElementById("assignment");
         this.cb = null;

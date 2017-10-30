@@ -8,7 +8,7 @@ export default class Board {
     }
 
     createPawn() {
-        const icon = loadImage("rabbit.ico");
+        const icon = loadImage("./../img/rabbit.ico");
         this.pawns.push(new Pawn(this.getSquarePos(0), icon));
     }
 
