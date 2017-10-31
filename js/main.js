@@ -14,16 +14,21 @@ window.setup = () => {
     board = new Board(boardData);
     game = new Game(gameData, board);
     board.createPawn();
+    boardData.presents.forEach(present => board.createPresent(present));
 }
 
 window.draw = () => {
     background(bg);
+    board.presents.forEach(present => {
+        present.show();
+    });
     board.pawns.forEach((pawn, idx) => {
         if(pawn.isMoving && frameCount % 25 === 0) {
             board.movePawn(idx);
         }
         pawn.show();
     });
+
     if(game.dice.rolling && frameCount % 5 === 0) {
         game.dice.roll();
     }

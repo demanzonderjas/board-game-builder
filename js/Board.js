@@ -1,15 +1,22 @@
 import Pawn from './Pawn.js';
+import Present from './Present.js';
 
 export default class Board {
-    constructor(json) {
-        this.squares = json.squares;
+    constructor(data) {
+        this.squares = data.squares;
         this.pawns = [];
+        this.presents = [];
         this.totalSquares = 30;
     }
 
     createPawn() {
         const icon = loadImage("./../img/pawn.jpg");
         this.pawns.push(new Pawn(this.getSquarePos(0), icon));
+    }
+
+    createPresent(square) {
+        const icon = loadImage("./../img/present.png");
+        this.presents.push(new Present(this.getSquarePos(square), square, icon));
     }
 
     getSquarePos(num) {
@@ -25,5 +32,4 @@ export default class Board {
         this.pawns[pawnNum].pointsLeft = points;
         this.pawns[pawnNum].isMoving = true;
     }
-
 }
