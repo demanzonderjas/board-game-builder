@@ -7,6 +7,7 @@ export default class Game {
         this.activeAssignment = null;
         this.board = board;
         this.dice = new Dice(6, data.categories);
+        this.dice.listen(this);
     }
 
     checkOutcome([isCorrect, points]) {

@@ -14,6 +14,13 @@ export default class Dice {
         return dice;
     }
 
+    listen(game) {
+        this.element.addEventListener("click", () => {
+            this.start();
+            setTimeout(() => this.stop((outcome) => game.showAssignment.call(game, outcome)), 1500);
+        });
+    }
+
     roll() {
         const outcome = Math.floor(random(this.sides));
         const image = this.categories[outcome].image;

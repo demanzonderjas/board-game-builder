@@ -19,7 +19,7 @@ window.setup = () => {
 window.draw = () => {
     background(bg);
     board.pawns.forEach((pawn, idx) => {
-        if(pawn.isMoving && frameCount % 30 === 0) {
+        if(pawn.isMoving && frameCount % 25 === 0) {
             board.movePawn(idx);
         }
         pawn.show();
@@ -28,10 +28,3 @@ window.draw = () => {
         game.dice.roll();
     }
 }
-
-window.addEventListener("click", () => {
-    game.dice.start();
-    setTimeout(() => {
-        game.dice.stop((outcome) => game.showAssignment.call(game, outcome));
-    }, 1500);
-});

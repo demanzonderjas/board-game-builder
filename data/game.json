@@ -41,6 +41,45 @@
         },
         {
             "type": "question",
+            "title": "Waar wilt de hoed Harry Potter eerst indelen?",
+            "points": 5,
+            "category": "Harry Potter",
+            "answers": [
+                "Griffoendor",
+                "Ravenklauw",
+                "Zwadderich",
+                "Huffelpuff"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Hoe heet de draak van Hagrid uit deel 1?",
+            "points": 5,
+            "category": "Harry Potter",
+            "answers": [
+                "Aragog",
+                "Norbert",
+                "Smaug",
+                "Charlie"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Wat is geen gruzielelement?",
+            "points": 5,
+            "category": "Harry Potter",
+            "answers": [
+                "Dagboek van Marten Villijn",
+                "Beker van Huffelpuff",
+                "Harry Potter",
+                "Diadeem van Griffoendor"
+            ],
+            "correct": 3
+        },
+        {
+            "type": "question",
             "title": "Wat is geen bijnaam van Siem?",
             "points": 3,
             "category": "Siem",
