@@ -8,7 +8,7 @@ export default class Answer {
     init() {
         let answer = document.createElement("li");
         answer.setAttribute("class", "answer");
-        answer.innerHTML = this.indicator + ". " + this.text;
+        answer.innerHTML = (this.indicator+1) + ". " + this.text;
         return answer;
     }
 }

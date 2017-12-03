@@ -38,6 +38,7 @@ export default class Assignment {
         this.loadAnswers();
         this.element.querySelector(".title").innerHTML = this.title;
         this.element.querySelector(".category").innerHTML = this.category;
+        this.element.querySelector(".points").innerHTML = this.points;
         this.element.style.display = "block";
     }
 }

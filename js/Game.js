@@ -12,9 +12,21 @@ export default class Game {
 
     checkOutcome([isCorrect, points]) {
         if(isCorrect) {
-            this.board.setPoints(0, points);
+            this.activeAssignment.element.classList.add("right");
+            setTimeout(() => {
+                this.board.setPoints(0, points);
+                this.activeAssignment.hide();
+                this.activeAssignment.element.classList.remove("right");
+                this.dice.setButton();
+            }, 1000);
+        } else {
+            this.activeAssignment.element.classList.add("wrong");
+            setTimeout(() => {
+                this.activeAssignment.hide();
+                this.activeAssignment.element.classList.remove("wrong");
+                this.dice.setButton();
+            }, 1000);
         }
-        this.activeAssignment.hide();
     }
 
     selectAssignment(category) {

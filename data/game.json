@@ -28,6 +28,136 @@
     "assignments": [
         {
             "type": "question",
+            "title": "Dit is een legpuzzel van: <img src='/img/colloseum.jpg' />",
+            "points": 3,
+            "category": "Legpuzzels",
+            "answers": [
+                "Het Pantheon",
+                "Ring van Babylon",
+                "Het Colloseum",
+                "Het Burassium"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Dit is een legpuzzel van: <img src='/img/zweinstein.jpg' />",
+            "points": 3,
+            "category": "Legpuzzels",
+            "answers": [
+                "Zweinstein",
+                "Big Ben",
+                "De Dom",
+                "Willekeurig kathedraal"
+            ],
+            "correct": 0
+        },
+        {
+            "type": "question",
+            "title": "Dit is een legpuzzel van: <img src='/img/londen.jpg' />",
+            "points": 3,
+            "category": "Legpuzzels",
+            "answers": [
+                "Amsterdam",
+                "Parijs",
+                "Londen",
+                "Berlijn"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Sims.., maar welke versie?: <img src='/img/sims-2.jpg' />",
+            "points": 3,
+            "category": "Sims",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Sims.., maar welke versie?: <img src='/img/sims-1.jpg' />",
+            "points": 3,
+            "category": "Sims",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct": 0
+        },
+        {
+            "type": "question",
+            "title": "Sims.., maar welke versie?: <img src='/img/sims-3.webp' />",
+            "points": 3,
+            "category": "Sims",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Welk dier zie je hier: <img src='/img/kikker.png' />",
+            "points": 3,
+            "category": "Knutselen",
+            "answers": [
+                "Sprinkhaan",
+                "Kikker",
+                "Schildpad",
+                "Dit is een mens"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Welk dier zie je hier: <img src='/img/kikker.png' />",
+            "points": 2,
+            "category": "Knutselen",
+            "answers": [
+                "Sprinkhaan",
+                "Kikker",
+                "Schildpad",
+                "Dit is een mens"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Welk dier zie je hier: <img src='/img/spin.jpg' />",
+            "points": 2,
+            "category": "Knutselen",
+            "answers": [
+                "Spin",
+                "Stekelbaars",
+                "Opgeblazen mier",
+                "Teek"
+            ],
+            "correct": 0
+        },
+        {
+            "type": "question",
+            "title": "Welk dier zie je hier: <img src='/img/konijn.jpg' />",
+            "points": 2,
+            "category": "Knutselen",
+            "answers": [
+                "Muis",
+                "Haas",
+                "Konijn",
+                "Cavia"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
             "title": "Wat voor litteken heeft Harry Potter?",
             "points": 3,
             "category": "Harry Potter",
@@ -75,6 +205,19 @@
                 "Ze zijn even oud"
             ],
             "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Wat is geen bekend hulpmiddel van een bejaarde?",
+            "points": 1,
+            "category": "Bejaarden",
+            "answers": [
+                "Wandelstok",
+                "Rollator",
+                "Looprek",
+                "Fidget Spinner"
+            ],
+            "correct": 3
         },
         {
             "type": "question",
@@ -127,6 +270,32 @@
                 "Poepie"
             ],
             "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Wat is Siem op een gegeven moment kwijtgeraakt?",
+            "points": 3,
+            "category": "Siem",
+            "answers": [
+                "Zijn rugzak",
+                "Zijn verstand",
+                "Zijn enthousiasme",
+                "Zijn liefde voor Nina"
+            ],
+            "correct": 0
+        },
+        {
+            "type": "question",
+            "title": "Wat is geen eerdere hobby van Siem?",
+            "points": 2,
+            "category": "Siem",
+            "answers": [
+                "Tapdansen",
+                "Shows met dierenpakken",
+                "Fruity Loops",
+                "Breakdancen"
+            ],
+            "correct": 3
         }
     ]
 }

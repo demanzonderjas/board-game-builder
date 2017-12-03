@@ -15,6 +15,10 @@ export default class Dice {
         return dice;
     }
 
+    setButton() {
+        this.element.innerHTML = "<div class='red-button'></div>";
+    }
+
     listen(game) {
         this.element.addEventListener("click", () => {
             this.start();
