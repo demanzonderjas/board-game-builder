@@ -14,9 +14,9 @@ export default class Board {
         this.pawns.push(new Pawn(this.getSquarePos(0), icon));
     }
 
-    createPresent(square) {
+    createPresent(data) {
         const icon = loadImage("./../img/present.png");
-        this.presents.push(new Present(this.getSquarePos(square), square, icon));
+        this.presents.push(new Present(this.getSquarePos(data.square), data.square, data.content, icon));
     }
 
     getSquarePos(num) {

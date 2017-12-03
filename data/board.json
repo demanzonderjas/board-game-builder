@@ -1,5 +1,14 @@
 {
-    "presents": [ 9, 29 ],
+    "presents": [
+        {
+            "square": 9,
+            "content": "<p>Open het kleine kadootje :)</p>"
+        },
+        {
+            "square": 29,
+            "content": "<p>Open het grote kadootje :)</p>"
+        }
+    ],
     "squares": [
         {
             "coords": {
@@ -177,7 +186,7 @@
         },
         {
             "coords": {
-                "x": 30,
+                "x": 35,
                 "y": 110
             }
         }

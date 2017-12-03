@@ -8,6 +8,7 @@ export default class Assignment {
         this.answers = data.answers;
         this.category = data.category;
         this.correct = data.correct;
+        this.answered = false;
         this.element = document.getElementById("assignment");
         this.cb = null;
 
@@ -16,6 +17,7 @@ export default class Assignment {
     }
 
     checkAnswer(answer) {
+        this.answered = true;
         this.cb(answer.indicator === this.correct, this.points);
     }
 

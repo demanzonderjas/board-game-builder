@@ -18,7 +18,7 @@ export default class Game {
     }
 
     selectAssignment(category) {
-        const chosen = this.assignments.filter(a => a.category == category.name);
+        const chosen = this.assignments.filter(a => a.category == category.name && !a.answered);
         return random(chosen);
     }
 

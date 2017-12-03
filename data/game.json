@@ -29,7 +29,7 @@
         {
             "type": "question",
             "title": "Wat voor litteken heeft Harry Potter?",
-            "points": 5,
+            "points": 3,
             "category": "Harry Potter",
             "answers": [
                 "Bliksemschicht",
@@ -41,8 +41,21 @@
         },
         {
             "type": "question",
-            "title": "Waar wilt de hoed Harry Potter eerst indelen?",
+            "title": "Los de volgende <a target='_blank' href='https://puzzel.org/nl/crossword/play?p=-L-QK5hxOtSPHYEdEM3g'>puzzel</a> op voor het wachtwoord: ",
             "points": 5,
+            "category": "Bejaarden",
+            "answers": [
+                "Vijg",
+                "Vijf",
+                "Vier",
+                "Vies"
+            ],
+            "correct": 2
+        },
+        {
+            "type": "question",
+            "title": "Waar wilt de hoed Harry Potter eerst indelen?",
+            "points": 3,
             "category": "Harry Potter",
             "answers": [
                 "Griffoendor",
@@ -55,7 +68,7 @@
         {
             "type": "question",
             "title": "Hoe heet de draak van Hagrid uit deel 1?",
-            "points": 5,
+            "points": 3,
             "category": "Harry Potter",
             "answers": [
                 "Aragog",
@@ -68,7 +81,7 @@
         {
             "type": "question",
             "title": "Wat is geen gruzielelement?",
-            "points": 5,
+            "points": 3,
             "category": "Harry Potter",
             "answers": [
                 "Dagboek van Marten Villijn",

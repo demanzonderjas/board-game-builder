@@ -27,9 +27,18 @@ window.draw = () => {
             board.movePawn(idx);
         }
         pawn.show();
+        board.presents.forEach(present => {
+            present.canBeOpened(pawn.square);
+        });
     });
+
 
     if(game.dice.rolling && frameCount % 5 === 0) {
         game.dice.roll();
+        board.presents.forEach(present => {
+            if(present.opened && present.element.style.display == "block") {
+                present.hide();
+            }
+        });
     }
 }
