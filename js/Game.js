@@ -19,11 +19,16 @@ export default class Game {
 
     selectAssignment(category) {
         const chosen = this.assignments.filter(a => a.category == category.name && !a.answered);
-        return random(chosen);
+        return (chosen.length > 0) ? random(chosen) : false;
     }
 
     showAssignment(outcome) {
-        this.activeAssignment = new Assignment(this.selectAssignment(outcome));
-        this.activeAssignment.show((outcome, points) => this.checkOutcome.call(this, [outcome, points]));
+        const newAssignment = this.selectAssignment(outcome);
+        if(newAssignment) {
+            this.activeAssignment = new Assignment(newAssignment);
+            this.activeAssignment.show((outcome, points) => this.checkOutcome.call(this, [outcome, points]));
+        } else {
+            this.dice.element.click();
+        }
     }
 }

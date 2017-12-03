@@ -54,6 +54,30 @@
         },
         {
             "type": "question",
+            "title": "Wie is ouder, Oma Kramers of Oma Weustenraad?",
+            "points": 2,
+            "category": "Bejaarden",
+            "answers": [
+                "Oma Kramers",
+                "Oma Weustenraad",
+                "Ze zijn even oud"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
+            "title": "Wie is ouder, Oma Kramers of Oma Weustenraad?",
+            "points": 2,
+            "category": "Bejaarden",
+            "answers": [
+                "Oma Kramers",
+                "Oma Weustenraad",
+                "Ze zijn even oud"
+            ],
+            "correct": 1
+        },
+        {
+            "type": "question",
             "title": "Waar wilt de hoed Harry Potter eerst indelen?",
             "points": 3,
             "category": "Harry Potter",

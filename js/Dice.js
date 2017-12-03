@@ -10,6 +10,7 @@ export default class Dice {
     init() {
         let dice = document.createElement("div");
         dice.setAttribute("class", "dice");
+        dice.innerHTML = "<div class='red-button'></div>";
         document.body.appendChild(dice);
         return dice;
     }
