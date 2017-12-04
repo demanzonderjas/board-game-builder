@@ -25,7 +25,11 @@ export default class Board {
 
     movePawn(pawnNum) {
         const newSquare = this.pawns[pawnNum].square + 1;
-        this.pawns[pawnNum].move(this.getSquarePos(newSquare));
+        if(newSquare <= 29) {
+            this.pawns[pawnNum].move(this.getSquarePos(newSquare));
+        } else {
+            console.log("You win!");
+        }
     }
 
     setPoints(pawnNum, points) {

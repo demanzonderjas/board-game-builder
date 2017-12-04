@@ -2,11 +2,11 @@
     "presents": [
         {
             "square": 9,
-            "content": "<p>Open het kleine kadootje :)</p>"
+            "content": "<p>Kadootje ligt in de keuken :)</p>"
         },
         {
             "square": 29,
-            "content": "<p>Open het grote kadootje :)</p>"
+            "content": "<p>Kadootje ligt in de slaapkamer :)</p>"
         }
     ],
     "squares": [

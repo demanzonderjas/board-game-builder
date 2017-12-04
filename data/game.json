@@ -196,18 +196,6 @@
         },
         {
             "type": "question",
-            "title": "Wie is ouder, Oma Kramers of Oma Weustenraad?",
-            "points": 2,
-            "category": "Bejaarden",
-            "answers": [
-                "Oma Kramers",
-                "Oma Weustenraad",
-                "Ze zijn even oud"
-            ],
-            "correct": 1
-        },
-        {
-            "type": "question",
             "title": "Wat is geen bekend hulpmiddel van een bejaarde?",
             "points": 1,
             "category": "Bejaarden",

@@ -23,7 +23,7 @@ window.draw = () => {
         present.show();
     });
     board.pawns.forEach((pawn, idx) => {
-        if(pawn.isMoving && frameCount % 25 === 0) {
+        if(pawn.isMoving && frameCount % 35 === 0) {
             board.movePawn(idx);
         }
         pawn.show();

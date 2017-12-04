@@ -35,6 +35,7 @@ export default class Assignment {
 
     show(cb) {
         this.cb = cb;
+        this.element.querySelector(".answers").innerHTML = "";
         this.loadAnswers();
         this.element.querySelector(".title").innerHTML = this.title;
         this.element.querySelector(".category").innerHTML = this.category;
